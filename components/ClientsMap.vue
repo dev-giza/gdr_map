@@ -47,7 +47,7 @@ const attribution = '&copy; <a href="https://www.openstreetmap.org/copyright">Op
 const markers = ref<any[]>([]);
 
 async function fetchMarkers() {
-    const res = await fetch('/api/clients-with-coords');
+    const res = await fetch('/clients_with_coords.json');
     const data = await res.json();
     // Фильтруем только те, у кого есть координаты
     markers.value = data.filter((c: any) => c.lat && c.lng);
