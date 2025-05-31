@@ -20,18 +20,7 @@
                 </l-popup>
             </l-marker>
         </l-map>
-        <div style="margin-top: 24px;">
-            <h3>Добавленные клиенты:</h3>
-            <ul>
-                <li v-for="(marker, idx) in markers" :key="'list-' + idx">
-                    <strong>ID:</strong> {{ marker.id }} | <strong>{{ marker.first_name }} {{ marker.last_name
-                    }}</strong> | <strong>Компания:</strong> {{ marker.client_company_name }} |
-                    <strong>Email:</strong> {{ marker.email_address }} | <strong>Телефон:</strong> {{
-                        marker.primary_phone }} | <strong>Адрес:</strong> {{ marker.address }} | <strong>Ad Group:</strong>
-                    {{ marker.ad_group }} | <strong>WO Paperwork:</strong> {{ marker.wo_paperwork }}
-                </li>
-            </ul>
-        </div>
+
     </div>
 </template>
 
